@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseU
 from django.contrib.auth.hashers import make_password
 class UserManager(BaseUserManager):
     def create_user(self, username, password=None):
-        """
+        """ 
         Creates and saves a user with the given username and password.
         """
         if not username:
